@@ -5,10 +5,13 @@ function getRandomChoice() {
     const randomChoice = Math.floor(Math.random() * computersChoices.length);
     return computersChoices[randomChoice];
 }
-const choiceComputer = getRandomChoice();
+let choiceComputer = getRandomChoice();
 
 //End of script for computer's choice
 
 //Script for human's choice
-let choiceHuman = prompt("Rock, Paper or Scissors?");
-console.log(choiceHuman);
+
+let humanInput = prompt("Rock, Paper or Scissors?");
+let humanChoice = humanInput.toLowerCase();
+
+//End of script for human's choice
